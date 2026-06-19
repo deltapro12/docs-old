@@ -94,3 +94,26 @@ figcaption {
   text-align: center;
   color: #7b7b7b;
 }
+
+/* Center documentation layout (bun.sh/docs style) — fixes tscircuit/docs-old#64 */
+@media (min-width: 997px) {
+  .main-wrapper > .container {
+    max-width: 1280px;
+    margin-inline: auto;
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+  main[class*='docMainContainer'] {
+    flex: 1 1 auto;
+    max-width: 52rem;
+    margin-inline: auto;
+  }
+
+  article[class*='docItemContainer'] {
+    max-width: 48rem;
+    margin-inline: auto;
+  }
+}
