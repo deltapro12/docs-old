@@ -1,0 +1,70 @@
+---
+title: "tscircuit Repositories"
+description: "Overview of tscircuit GitHub repositories for contributors"
+slug: /contribution-repos
+---
+
+Use this guide to find the right repository when contributing to tscircuit. Most repos use GitHub issues and [Algora bounties](https://algora.io/tscircuit/bounties).
+
+## Core platform
+
+| Repository | Purpose |
+| --- | --- |
+| [tscircuit/tscircuit](https://github.com/tscircuit/tscircuit) | Main framework — create electronics with TypeScript and React |
+| [tscircuit/core](https://github.com/tscircuit/core) | Core compiler from TypeScript to Circuit JSON |
+| [tscircuit/circuit-json](https://github.com/tscircuit/circuit-json) | Low-level schematic, PCB, and manufacturing representation |
+| [tscircuit/props](https://github.com/tscircuit/props) | Component prop definitions shared across packages |
+| [tscircuit/cli](https://github.com/tscircuit/cli) | Local development server and CLI tooling |
+| [tscircuit/tscircuit.com](https://github.com/tscircuit/tscircuit.com) | Website, playground, and online editor |
+| [tscircuit/runframe](https://github.com/tscircuit/runframe) | Runs tscircuit code in a web worker and renders previews |
+| [tscircuit/eval](https://github.com/tscircuit/eval) | Evaluate tscircuit code to Circuit JSON in browsers and Node |
+
+## Viewers and rendering
+
+| Repository | Purpose |
+| --- | --- |
+| [tscircuit/pcb-viewer](https://github.com/tscircuit/pcb-viewer) | React PCB viewer for Circuit JSON |
+| [tscircuit/circuit-to-svg](https://github.com/tscircuit/circuit-to-svg) | Convert Circuit JSON to schematic, PCB, and assembly SVGs |
+| [tscircuit/svg.tscircuit.com](https://github.com/tscircuit/svg.tscircuit.com) | Server that renders encoded tscircuit code into SVGs for docs |
+| [tscircuit/schematic-symbols](https://github.com/tscircuit/schematic-symbols) | Schematic symbol definitions |
+
+## Routing and layout solvers
+
+| Repository | Purpose |
+| --- | --- |
+| [tscircuit/tscircuit-autorouter](https://github.com/tscircuit/tscircuit-autorouter) | MIT-licensed PCB autorouter |
+| [tscircuit/schematic-trace-solver](https://github.com/tscircuit/schematic-trace-solver) | Schematic trace routing and net label placement |
+| [tscircuit/copper-pour-solver](https://github.com/tscircuit/copper-pour-solver) | Copper pour polygon solver |
+| [tscircuit/dsn-converter](https://github.com/tscircuit/dsn-converter) | Convert DSN files to Circuit JSON |
+
+## Data, search, and manufacturing
+
+| Repository | Purpose |
+| --- | --- |
+| [tscircuit/jlcsearch](https://github.com/tscircuit/jlcsearch) | JLCPCB component search API and data |
+| [tscircuit/circuit-json-to-step](https://github.com/tscircuit/circuit-json-to-step) | Export Circuit JSON to STEP files |
+| [tscircuit/ngspice-spice-engine](https://github.com/tscircuit/ngspice-spice-engine) | ngspice SPICE engine integration |
+
+## Documentation and community
+
+| Repository | Purpose |
+| --- | --- |
+| [tscircuit/docs](https://github.com/tscircuit/docs) | Current docs, tutorials, and guides |
+| [tscircuit/contribution-tracker](https://github.com/tscircuit/contribution-tracker) | Generate contribution summaries for projects |
+
+## Infrastructure and tooling
+
+| Repository | Purpose |
+| --- | --- |
+| [tscircuit/status](https://github.com/tscircuit/status) | Service status checks |
+| [tscircuit/maintenance-tracker](https://github.com/tscircuit/maintenance-tracker) | CI and maintenance metrics |
+
+## How to pick a repo
+
+1. **UI or docs fixes** → `tscircuit.com`, `docs`, or `pcb-viewer`
+2. **Language/compiler bugs** → `core`, `tscircuit`, or `eval`
+3. **PCB routing** → `tscircuit-autorouter`, `dsn-converter`, or `copper-pour-solver`
+4. **Schematic layout** → `schematic-trace-solver` or `schematic-symbols`
+5. **Part data** → `jlcsearch`
+
+Check open bounties at [algora.io/tscircuit/bounties](https://algora.io/tscircuit/bounties) before starting work.
