@@ -1,0 +1,70 @@
+---
+title: "User-Facing Tools"
+description: "Overview of tscircuit websites, editors, and converters for end users"
+slug: /user-facing-tools
+---
+
+tscircuit ships several user-facing tools beyond the core library. Use this page to pick the right surface for designing, viewing, routing, or sharing circuits.
+
+## Design and editing
+
+| Tool | URL | What it does |
+| --- | --- | --- |
+| **Online editor** | [tscircuit.com/editor](https://tscircuit.com/editor) | Browser-based playground to write tscircuit code and preview schematics, PCBs, and 3D views |
+| **Snippets** | [snippets.tscircuit.com](https://snippets.tscircuit.com) | Create and share small circuit snippets without a full project setup |
+| **Registry** | [tscircuit.com/trending](https://tscircuit.com/trending) | Browse, publish, and import reusable circuit packages |
+| **CLI** | [github.com/tscircuit/cli](https://github.com/tscircuit/cli) | Local dev server for building circuits with TypeScript/React on your machine |
+
+## Viewers and previews
+
+| Tool | URL | What it does |
+| --- | --- | --- |
+| **PCB viewer** | [github.com/tscircuit/pcb-viewer](https://github.com/tscircuit/pcb-viewer) | React component for rendering Circuit JSON as an interactive PCB |
+| **Runframe** | [github.com/tscircuit/runframe](https://github.com/tscircuit/runframe) | Runs tscircuit code in a web worker and renders schematic, PCB, and 3D previews |
+| **SVG renderer** | [svg.tscircuit.com](https://svg.tscircuit.com) | Server that turns encoded tscircuit code into SVG images for docs and embeds |
+
+## Routing and manufacturing
+
+| Tool | URL | What it does |
+| --- | --- | --- |
+| **Autorouting** | [autorouting.com](https://autorouting.com) | Web UI for the tscircuit autorouter |
+| **DSN viewer** | [dsn.tscircuit.com](https://dsn.tscircuit.com) | Upload and inspect `.dsn` PCB routing files in the browser |
+
+## Converters and utilities
+
+| Tool | URL | What it does |
+| --- | --- | --- |
+| **DSN converter** | [github.com/tscircuit/dsn-converter](https://github.com/tscircuit/dsn-converter) | Convert DSN files into Circuit JSON |
+| **Circuit to SVG** | [github.com/tscircuit/circuit-to-svg](https://github.com/tscircuit/circuit-to-svg) | Convert Circuit JSON into schematic, PCB, and assembly SVGs |
+| **Text to footprint** | [text-to-footprint.tscircuit.com](https://text-to-footprint.tscircuit.com) | Generate PCB footprints from natural-language descriptions |
+| **Circuit JSON to STEP** | [github.com/tscircuit/circuit-json-to-step](https://github.com/tscircuit/circuit-json-to-step) | Export 3D STEP models from Circuit JSON |
+
+## Core libraries (under the hood)
+
+| Tool | URL | What it does |
+| --- | --- | --- |
+| **Core** | [github.com/tscircuit/core](https://github.com/tscircuit/core) | Compiles tscircuit TypeScript/React into Circuit JSON |
+| **Eval** | [github.com/tscircuit/eval](https://github.com/tscircuit/eval) | Evaluate tscircuit code to Circuit JSON in browsers and Node |
+| **Circuit JSON** | [github.com/tscircuit/circuit-json](https://github.com/tscircuit/circuit-json) | Shared low-level representation for schematics, PCBs, and manufacturing output |
+
+## Typical workflows
+
+### Quick experiment
+1. Open [tscircuit.com/editor](https://tscircuit.com/editor) or [snippets.tscircuit.com](https://snippets.tscircuit.com)
+2. Write a circuit and preview it live
+3. Publish to the [registry](https://tscircuit.com/trending) when ready to share
+
+### Local development
+1. Install the [CLI](https://github.com/tscircuit/cli)
+2. Run the local dev server
+3. Use **runframe** or **pcb-viewer** in your app for previews
+
+### Import external PCB data
+1. Upload a DSN to [dsn.tscircuit.com](https://dsn.tscircuit.com)
+2. Convert with [dsn-converter](https://github.com/tscircuit/dsn-converter) if you need Circuit JSON
+3. Route or edit in [autorouting.com](https://autorouting.com) or the online editor
+
+## Related docs
+
+- [tscircuit Repositories](/docs/contribution-repos) — GitHub repos for contributors (same docs site)
+- [Registry guide](https://tscircuit.com/trending) — publishing reusable packages
