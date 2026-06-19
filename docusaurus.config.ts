@@ -9,8 +9,8 @@ const config: Config = {
   url: 'https://your-docusaurus-site.example.com',
   baseUrl: '',
 
-  organizationName: 'tsciuit',
-  projectName: 'tscircuit',
+  organizationName: 'tscircuit',
+  projectName: 'docs-old',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -29,6 +29,7 @@ const config: Config = {
           path: 'docs',
           routeBasePath: 'docs',
           sidebarPath: './sidebars.ts',
+          editUrl: 'https://github.com/tscircuit/docs-old/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -55,6 +56,7 @@ const config: Config = {
         path: 'api-reference',
         routeBasePath: 'api-reference',
         sidebarPath: './sidebars.ts',
+        editUrl: 'https://github.com/tscircuit/docs-old/edit/main/',
       },
     ],
   ],
@@ -109,19 +111,21 @@ const config: Config = {
           docsPluginId: 'api'
         },
         {
-          href: 'mailto:contact@tscircuit.com',
-          label: 'Support',
+          href: 'https://tscircuit.com/editor',
+          label: 'Try Online',
           position: 'right',
         },
         {
-          href: 'https://tscircuit.com/trending',
-          label: 'Find Packages',
+          href: 'https://discord.com/invite/V7FGE5ZCbA',
           position: 'right',
+          className: 'header-discord-link',
+          'aria-label': 'Discord',
         },
         {
           href: 'https://github.com/tscircuit/tscircuit',
           position: 'right',
           className: 'header-github-link',
+          'aria-label': 'GitHub',
         },
       ],
     },
